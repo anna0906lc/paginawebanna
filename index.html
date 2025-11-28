@@ -1,0 +1,78 @@
+html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corrida de Carros: Conceitos de HTML e CSS</title>
+    <!-- Carregando o Tailwind CSS para estilização rápida e responsiva -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- NOVO: Linkando o arquivo CSS externo -->
+    <link rel="stylesheet" href="style.css"> 
+
+</head>
+<body class="min-h-screen">
+
+    <!-- Container Principal Responsivo -->
+    <div class="track-grid mx-auto max-w-7xl p-4 sm:p-8">
+
+        <!-- CABEÇALHO (HTML: Títulos) -->
+        <header class="text-center py-12 border-b-4 border-yellow-400 mb-10 rounded-xl bg-gray-900 shadow-2xl">
+            <!-- Título Principal (Elemento H1) -->
+            <h1 class="text-5xl sm:text-7xl font-extrabold text-red-600 tracking-tight mb-2 uppercase">
+                A Velocidade da Web
+            </h1>
+            <!-- Subtítulo (Elemento P) -->
+            <p class="text-xl sm:text-2xl font-light text-gray-300">
+                HTML e CSS no Mundo das Corridas
+            </p>
+        </header>
+
+        <!-- SEÇÃO 1: ESTRUTURA (O MOTOR E O CHASSI - HTML) -->
+        <section id="estrutura-html" class="mb-12 p-6 bg-gray-800 rounded-lg shadow-lg">
+            <h2 class="text-3xl font-bold text-yellow-400 mb-4 border-b-2 border-yellow-400 pb-2">
+                1. HTML: A Estrutura (O Chassi e os Componentes)
+            </h2>
+            <p class="text-gray-300 mb-6">
+                O HTML (<span class="font-semibold text-red-400">HyperText Markup Language</span>) é como o chassi de um carro de corrida. Ele define a estrutura e onde cada componente (texto, imagem, links) se encaixa.
+            </p>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- Artigo sobre Tags (Estrutura) -->
+                <article class="p-4 bg-gray-900 rounded-md border-l-4 border-red-600">
+                    <h3 class="text-xl font-semibold mb-2 text-white">Elementos Chave</h3>
+                    <!-- Lista Não Ordenada (Elemento UL) -->
+                    <ul class="list-none space-y-2 text-gray-400">
+                        <li class="flex items-center">
+                            <span class="text-red-600 font-bold mr-2">&lt;h1&gt;</span>
+                            - O Título Principal: A bandeira de chegada da página.
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-red-600 font-bold mr-2">&lt;p&gt;</span>
+                            - Parágrafos: Informações sobre o desempenho do carro.
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-red-600 font-bold mr-2">&lt;div&gt;</span>
+                            - Divisão: O compartimento do motor, organizando partes.
+                        </li>
+                        <li class="flex items-center">
+                            <!-- Link (Elemento A) -->
+                            <span class="text-red-600 font-bold mr-2">&lt;a&gt;</span>
+                            - Links: O caminho de volta aos boxes ou para outras páginas.
+                        </li>
+                    </ul>
+                </article>
+
+                <!-- Exemplo de Link -->
+                <div class="flex flex-col justify-center items-center p-4 bg-gray-900 rounded-md border-r-4 border-yellow-400">
+                    <p class="text-lg mb-3 text-gray-300">
+                        O Link (âncora) nos leva à próxima volta:
+                    </p>
+                    <!-- Alerta removido e substituído por uma mensagem no console para evitar o uso de alert() -->
+                    <a href="#" class="bg-yellow-400 text-gray-900 px-6 py-3 font-bold rounded-full transition duration-300 hover:bg-yellow-500 shadow-lg uppercase text-sm" onclick="console.log('Isso é um link HTML estilizado com CSS!')">
+                        Próxima Volta (Link &lt;a&gt;)
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        

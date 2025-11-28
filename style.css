@@ -1,0 +1,80 @@
+<!-- SEÇÃO 2: ESTILO (O DESIGN E AERODINÂMICA - CSS) -->
+        <section id="estilo-css" class="mb-12 p-6 bg-gray-800 rounded-lg shadow-lg">
+            <h2 class="text-3xl font-bold text-red-600 mb-4 border-b-2 border-red-600 pb-2">
+                2. CSS: O Estilo (A Pintura e a Aerodinâmica)
+            </h2>
+            <p class="text-gray-300 mb-6">
+                O CSS (<span class="font-semibold text-yellow-400">Cascading Style Sheets</span>) é o responsável pelo visual e pela performance aerodinâmica do seu carro. Ele dita as cores, o layout e a aparência geral.
+            </p>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                
+                <!-- Conceito 1: Cores (Color) -->
+                <div class="p-4 bg-gray-900 rounded-md border-l-4 border-blue-500">
+                    <h3 class="text-xl font-semibold mb-2 text-blue-500">Cores (Color/Background)</h3>
+                    <p class="text-gray-400">
+                        Define a cor da pintura e o fundo (como a cor do carro). <span class="text-red-600 font-bold">Exemplo:</span> <code class="bg-gray-700 p-1 rounded">bg-red-600</code>.
+                    </p>
+                    <div class="mt-3 w-full h-12 bg-red-600 rounded-full flex items-center justify-center font-bold text-white shadow-xl">
+                        Carro de F1 Vermelho
+                    </div>
+                </div>
+
+                <!-- Conceito 2: Layout (Layout/Display) -->
+                <div class="p-4 bg-gray-900 rounded-md border-l-4 border-green-500">
+                    <h3 class="text-xl font-semibold mb-2 text-green-500">Layout (Flexbox)</h3>
+                    <p class="text-gray-400">
+                        Organiza os elementos na tela (como a disposição dos carros no grid). Utilizamos <code class="bg-gray-700 p-1 rounded">flex</code> e <code class="bg-gray-700 p-1 rounded">grid</code>.
+                    </p>
+                    <div class="mt-3 flex justify-around items-end h-12 bg-gray-700 p-1 rounded">
+                        <div class="w-4 h-8 bg-white rounded-t"></div>
+                        <div class="w-4 h-10 bg-white rounded-t"></div>
+                        <div class="w-4 h-6 bg-white rounded-t"></div>
+                    </div>
+                </div>
+
+                <!-- Conceito 3: Responsividade (Media Queries) -->
+                <div class="p-4 bg-gray-900 rounded-md border-l-4 border-yellow-400">
+                    <h3 class="text-xl font-semibold mb-2 text-yellow-400">Responsividade (Media Queries)</h3>
+                    <p class="text-gray-400">
+                        Ajusta o design para diferentes telas (PC, Tablet, Celular) — a suspensão adaptativa do site. <span class="font-bold">Exemplo:</span> <code class="bg-gray-700 p-1 rounded">sm:text-lg</code>.
+                    </p>
+                    <div class="mt-3 w-full text-center text-xs sm:text-sm md:text-base lg:text-lg p-2 rounded bg-gray-700 text-gray-300">
+                        Texto muda de tamanho com a tela.
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- EXIBIÇÃO VISUAL (Imagem de Pista) -->
+        <div class="relative mb-12 p-8 bg-green-800 rounded-lg overflow-hidden shadow-2xl">
+            <!-- Representação Simples de uma Pista -->
+            <div class="absolute inset-0 bg-gray-700 rounded-lg transform rotate-3 scale-110 opacity-75"></div>
+            <div class="relative z-10 text-center">
+                <p class="text-4xl font-bold text-yellow-400 mb-4">
+                    GRID DE LARGADA FINAL
+                </p>
+                <!-- SVG simples para representar um carro (Estilizado com CSS) -->
+                <!-- Classe 'car-svg' adicionada para aplicar o CSS de animação do style.css -->
+                <svg viewBox="0 0 100 40" class="w-40 h-auto mx-auto fill-current text-white animate-pulse car-svg">
+                    <title>Carro de Corrida</title>
+                    <rect x="10" y="10" width="80" height="20" rx="5" fill="#DC2626"/>
+                    <rect x="5" y="15" width="90" height="10" fill="#FBBF24"/>
+                    <circle cx="20" cy="30" r="8" fill="#1F2937"/>
+                    <circle cx="80" cy="30" r="8" fill="#1F2937"/>
+                    <text x="50" y="25" font-size="10" fill="white" text-anchor="middle" font-weight="bold">#1</text>
+                </svg>
+                <p class="mt-4 text-gray-300">
+                    Tudo pronto! HTML (a forma) e CSS (a cor e animação) trabalhando juntos.
+                </p>
+            </div>
+        </div>
+
+        <!-- RODAPÉ -->
+        <footer class="text-center pt-8 border-t border-gray-700 text-gray-500 text-sm">
+            <p>&copy; 2025 Projeto Web de Corrida. Criado com paixão por código e velocidade.</p>
+        </footer>
+    </div>
+
+</body>
